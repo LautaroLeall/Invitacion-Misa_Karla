@@ -1,0 +1,30 @@
+/* src/styles/Invitate.css */
+.invitate-root {
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* agregar overlay sutil */
+.invitate-root::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.62));
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* para que el contenido se posicione sobre overlay */
+.invitate-root>* {
+    position: relative;
+    z-index: 1;
+}
