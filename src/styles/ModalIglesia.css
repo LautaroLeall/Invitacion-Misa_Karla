@@ -1,0 +1,7 @@
+/* src/styles/ModalIglesia.css */
+.iglesia-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
