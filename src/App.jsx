@@ -1,11 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Invitate from './components/Invitate';
 
-const App = () => {
-  return (
-    <div>
-
-    </div>
-  )
+export default function App() {
+  return <Invitate />;
 }
-
-export default App
