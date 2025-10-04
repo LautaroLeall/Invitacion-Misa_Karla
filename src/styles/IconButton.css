@@ -1,0 +1,63 @@
+/* src/styles/IconButton.css */
+.icon-btn {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.9));
+    box-shadow: 0 8px 26px rgba(156, 77, 96, 0.06);
+    cursor: pointer;
+    transition: transform .18s cubic-bezier(.2, .9, .2, 1), box-shadow .18s ease;
+    color: var(--color5);
+    font-weight: 600;
+    outline: none;
+}
+
+.icon-btn:hover:not(.is-disabled),
+.icon-btn:focus:not(.is-disabled) {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 20px 50px rgba(156, 77, 96, 0.11);
+}
+
+.icon-wrap {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, var(--color1), var(--color2));
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 6px 16px rgba(156, 77, 96, 0.06);
+}
+
+.btn-label {
+    text-align: left;
+    font-size: 15px;
+    color: var(--color5);
+}
+
+/* disabled style */
+.icon-btn.is-disabled {
+    cursor: default;
+    opacity: 0.92;
+    filter: grayscale(.02);
+}
+
+/* small screens */
+@media (max-width: 420px) {
+    .icon-wrap {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .btn-label {
+        font-size: 14px;
+    }
+}
