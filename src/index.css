@@ -1,9 +1,39 @@
+/* /index.css */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap');
+
 :root {
     --color1: #ffa8c5;
     --color2: #e490ad;
     --color3: #c97794;
     --color4: #ae5f7c;
     --color5: #934663;
-    --text: #4b3529;
+
     --bg: #fff6f8;
+    --text: #4b3529;
+    --muted: #8a6f6f;
+
+    --card-w: 720px;
+    --radius: 16px;
+    --shadow-soft: 0 10px 30px rgba(156, 77, 96, 0.08);
+    --shadow-deep: 0 20px 60px rgba(40, 20, 20, 0.15);
+}
+
+/* Reset minimal */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--bg);
+    color: var(--text);
 }
