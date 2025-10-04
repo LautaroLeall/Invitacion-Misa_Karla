@@ -42,8 +42,6 @@ invitacion-misa_karla/
 
 ## ⚙️ Instalación y uso (local)
 
-[![Ver Tajerta de Misa](https://img.shields.io/badge/Ver%20Tarjeta%20de%20Cumple-%232196F3?style=for-the-badge&logo=netlify&logoColor=white)](https://tarjeta-misa-karla.netlify.app/)
-
 ```bash
 1. Clonar el repositorio:
 
