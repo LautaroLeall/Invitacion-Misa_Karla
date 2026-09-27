@@ -4,7 +4,7 @@
     max-width: 720px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.92));
     border-radius: 18px;
-    padding: clamp(50px, 5vw, 40px);
+    padding: clamp(30px, 6vw, 60px);
     box-shadow: var(--shadow-soft);
     text-align: center;
     position: relative;
