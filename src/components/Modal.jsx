@@ -1,6 +1,7 @@
 // src/components/Modal.jsx
 import React, { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
+import { FaTimes } from 'react-icons/fa';
 import gsap from 'gsap';
 import '../styles/Modal.css';
 
@@ -31,7 +32,7 @@ export default function Modal({ isOpen, onClose, title, children }) {
     return createPortal(
         <div className="modal-backdrop" onMouseDown={(e) => { if (e.target.classList.contains('modal-backdrop')) onClose(); }}>
             <div className="modal-content" role="dialog" aria-modal="true" aria-label={title || 'Modal'} ref={dialogRef}>
-                <button className="modal-close" onClick={onClose} aria-label="Cerrar modal">✕</button>
+                <button className="modal-close" onClick={onClose} aria-label="Cerrar modal"><FaTimes /></button>
                 <div className="modal-body">{children}</div>
             </div>
         </div>,
