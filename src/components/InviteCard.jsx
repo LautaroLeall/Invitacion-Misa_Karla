@@ -34,10 +34,10 @@ export default function InviteCard() {
 
                 <div className="invite-card-actions">
                     {/* Apilados verticalmente */}
-                    <IconButton icon={FaCalendarAlt} label="Martes 07 de Octubre" disabled />
-                    <IconButton icon={FaClock} label="19:30 Hs" disabled />
-                    <IconButton icon={FaChurch} label="Iglesia San Alfonso" onClick={() => setOpenChurch(true)} />
-                    <IconButton icon={FaMapMarkerAlt} label="Leguizamón 812, Salta" onClick={() => setOpenMap(true)} />
+                    <IconButton icon={FaCalendarAlt} label="Sábado 15 de Diciembre" disabled />
+                    <IconButton icon={FaClock} label="19:00 Hs" disabled />
+                    <IconButton icon={FaChurch} label="Parroquia San José" onClick={() => setOpenChurch(true)} />
+                    <IconButton icon={FaMapMarkerAlt} label="Av. Central 456, Ciudad" onClick={() => setOpenMap(true)} />
                 </div>
             </div>
 
