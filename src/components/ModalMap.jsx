@@ -5,7 +5,7 @@ import '../styles/ModalMap.css';
 
 export default function ModalMap({ isOpen, onClose }) {
     return (
-        <Modal isOpen={isOpen} onClose={onClose} title="Ubicación - Iglesia San Alfonso">
+        <Modal isOpen={isOpen} onClose={onClose} title="Ubicación - Parroquia San José">
             <div className="map-wrapper">
                 <div className="iframe-container">
                     <iframe
@@ -16,7 +16,7 @@ export default function ModalMap({ isOpen, onClose }) {
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Mapa Iglesia San Alfonso"
+                        title="Mapa Parroquia San José"
                     />
                 </div>
             </div>
