@@ -6,9 +6,9 @@ import '../styles/ModalIglesia.css';
 
 export default function ModalIglesia({ isOpen, onClose }) {
     return (
-        <Modal isOpen={isOpen} onClose={onClose} title="Iglesia San Alfonso">
+        <Modal isOpen={isOpen} onClose={onClose} title="Parroquia San José">
             <div className="iglesia-wrapper">
-                <img src={iglesiaImg} alt="Iglesia San Alfonso" loading="lazy" />
+                <img src={iglesiaImg} alt="Parroquia San José" loading="lazy" />
             </div>
         </Modal>
     );
